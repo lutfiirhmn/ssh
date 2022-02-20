@@ -4,7 +4,6 @@ with open("/etc/ssh/sshd_config", "r") as file :
 	filedata = file.read()
 
 filedata = filedata.replace("#PermitRootLogin prohibit-password", "PermitRootLogin yes")
-filedata = filedata.replace("#PubkeyAuthentication yes", "PubkeyAuthentication no")
 filedata = filedata.replace("PasswordAuthentication no", "PasswordAuthentication yes")
 
 with open("/etc/ssh/sshd_config", "w") as file:
