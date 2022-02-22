@@ -5,18 +5,19 @@ from colorama import Fore, init as color_ama
 color_ama(autoreset=True)
 
 data = requests.get("https://luckpool.net/verus/miner/RHvyBq43am2Cfu6xp8tJzDUqj8Jsok5Byq")
-data = json.loads(data)
+data = json.loads(data.text)
 hashrateSols = data["hashrateSols"]
 hashrateString = data["hashrateString"]
 immature = data["immature"]
 balance = data["balance"]
 paid = data["paid"]
 
-if not os.path.exist("latestpool"):
+if not os.path.exists("latestpool"):
 	with open("latestpool", "w+") as f:
 		f.write("{}")
 	with open("latestpool", "r") as f:
 		dataa = f.read()
+	obj = json.loads(dataa)
 	datae = {f"hashrateString":"", "hashrateSols":0, "immature":0, "balance":0, "paid":0}
 	obj.update(data)
 	
@@ -25,41 +26,41 @@ if not os.path.exist("latestpool"):
 
 with open("latestpool", "r") as f:
 	dataa = f.read()
-obj = json.loads(data)
+obj = json.loads(dataa)
 
 if hashrateSols > obj["hashrateSols"]:
 	result = float(hashrateString.split(' ')[0]) - float(obj["hashrateString"].split(' ')[0])
-	print(f"\033[1mHashrate: {hashrateString}" + Fore.GREEN + "( +{result} )" + Fore.RESET)
+	print(f"\033[1mHashrate: {hashrateString}" + Fore.GREEN + f" ( +{round(float(result), 8)} )" + Fore.RESET)
 elif hashrateSols < obj["hashrateSols"]:
 	result = float(hashrateString.split(' ')[0]) - float(obj["hashrateString"].split(' ')[0])
-	print(f"\033[1mHashrate: {hashrateString}" + Fore.RED + "( {result} )" + Fore.RESET)
+	print(f"\033[1mHashrate: {hashrateString}" + Fore.RED + f" ( {round(float(result), 8)} )" + Fore.RESET)
 else:
 	print(f"\033[1mHashrate: {hashrateString}")
 	
 if immature > obj["immature"]:
 	result = immature - obj["immature"]
-	print(f"\033[1mImmature: {immature}" + Fore.GREEN + "( +{result} )" + Fore.RESET)
+	print(f"\033[1mImmature: {immature}" + Fore.GREEN + f" ( +{round(float(result), 8)} )" + Fore.RESET)
 elif immature < obj["immature"]:
 	result = immature - obj["immature"]
-	print(f"\033[1mImmature: {immature}" + Fore.RED + "( {result} )" + Fore.RESET)
+	print(f"\033[1mImmature: {immature}" + Fore.RED + f" ( {round(float(result), 8)} )" + Fore.RESET)
 else:
 	print(f"\033[1mImmature: {immature}")
 	
 if balance > obj["balance"]:
 	result = balance - obj["balance"]
-	print(f"\033[1mBalances: {balance}" + Fore.GREEN + "( +{balance} )" + Fore.RESET)
+	print(f"\033[1mBalances: {balance}" + Fore.GREEN + f" ( +{round(float(result), 8)} )" + Fore.RESET)
 elif balance < obj["balance"]:
 	result = balance - obj["balance"]
-	print(f"\033[1mBalances: {balance}" + Fore.RED + "( {balance} )" + Fore.RESET)
+	print(f"\033[1mBalances: {balance}" + Fore.RED + f" ( {round(float(result), 8)} )" + Fore.RESET)
 else:
 	print(f"\033[1mBalances: {balance}")
 	
 if paid > obj["paid"]:
 	result = paid - obj["paid"]
-	print(f"\033[1mTotal Paid: {paid}" + Fore.GREEN + "( +{paid} )" + Fore.RESET)
+	print(f"\033[1mTotal Paid: {paid}" + Fore.GREEN + f" ( +{round(float(result), 8)} )" + Fore.RESET)
 elif balance < obj["balance"]:
 	result = paid - obj["paid"]
-	print(f"\033[1mTotal Paid: {paid}" + Fore.RED + "( {paid} )" + Fore.RESET)
+	print(f"\033[1mTotal Paid: {paid}" + Fore.RED + f" ( {round(float(result), 8)} )" + Fore.RESET)
 else:
 	print(f"\033[1mTotal Paid: {paid}")
 	
