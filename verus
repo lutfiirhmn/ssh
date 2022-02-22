@@ -30,39 +30,39 @@ obj = json.loads(dataa)
 
 if hashrateSols > obj["hashrateSols"]:
 	result = float(hashrateString.split(' ')[0]) - float(obj["hashrateString"].split(' ')[0])
-	print(f"\033[1mHashrate: {hashrateString}" + Fore.GREEN + f" ( +{round(float(result), 8)} )" + Fore.RESET)
+	print(f"\033[1mHashrate: {hashrateString}" + Fore.GREEN + f" ( +{round(float(result), 8)} MHS )" + Fore.RESET)
 elif hashrateSols < obj["hashrateSols"]:
 	result = float(hashrateString.split(' ')[0]) - float(obj["hashrateString"].split(' ')[0])
-	print(f"\033[1mHashrate: {hashrateString}" + Fore.RED + f" ( {round(float(result), 8)} )" + Fore.RESET)
+	print(f"\033[1mHashrate: {hashrateString}" + Fore.RED + f" ( {round(float(result), 8)} MHS )" + Fore.RESET)
 else:
 	print(f"\033[1mHashrate: {hashrateString}")
 	
 if immature > obj["immature"]:
 	result = immature - obj["immature"]
-	print(f"\033[1mImmature: {immature}" + Fore.GREEN + f" ( +{round(float(result), 8)} )" + Fore.RESET)
+	print(f"\033[1mImmature: {immature} VRSC" + Fore.GREEN + f" ( +{round(float(result), 8)} VRSC )" + Fore.RESET)
 elif immature < obj["immature"]:
 	result = immature - obj["immature"]
-	print(f"\033[1mImmature: {immature}" + Fore.RED + f" ( {round(float(result), 8)} )" + Fore.RESET)
+	print(f"\033[1mImmature: {immature} VRSC" + Fore.RED + f" ( {round(float(result), 8)} VRSC )" + Fore.RESET)
 else:
-	print(f"\033[1mImmature: {immature}")
+	print(f"\033[1mImmature: {immature} VRSC")
 	
 if balance > obj["balance"]:
 	result = balance - obj["balance"]
-	print(f"\033[1mBalances: {balance}" + Fore.GREEN + f" ( +{round(float(result), 8)} )" + Fore.RESET)
+	print(f"\033[1mBalances: {balance} VRSC" + Fore.GREEN + f" ( +{round(float(result), 8)} VRSC)" + Fore.RESET)
 elif balance < obj["balance"]:
 	result = balance - obj["balance"]
-	print(f"\033[1mBalances: {balance}" + Fore.RED + f" ( {round(float(result), 8)} )" + Fore.RESET)
+	print(f"\033[1mBalances: {balance} VRSC" + Fore.RED + f" ( {round(float(result), 8)} VRSC)" + Fore.RESET)
 else:
-	print(f"\033[1mBalances: {balance}")
+	print(f"\033[1mBalances: {balance} VRSC")
 	
 if paid > obj["paid"]:
 	result = paid - obj["paid"]
-	print(f"\033[1mTotal Paid: {paid}" + Fore.GREEN + f" ( +{round(float(result), 8)} )" + Fore.RESET)
+	print(f"\033[1mTotal Paid: {paid} VRSC" + Fore.GREEN + f" ( +{round(float(result), 8)} VRSC)" + Fore.RESET)
 elif balance < obj["balance"]:
 	result = paid - obj["paid"]
-	print(f"\033[1mTotal Paid: {paid}" + Fore.RED + f" ( {round(float(result), 8)} )" + Fore.RESET)
+	print(f"\033[1mTotal Paid: {paid} VRSC" + Fore.RED + f" ( {round(float(result), 8)} VRSC)" + Fore.RESET)
 else:
-	print(f"\033[1mTotal Paid: {paid}")
+	print(f"\033[1mTotal Paid: {paid} VRSC")
 	
 obj["hashrateSols"] = hashrateSols
 obj["hashrateString"] = hashrateString
