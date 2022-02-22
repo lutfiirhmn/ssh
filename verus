@@ -28,10 +28,10 @@ with open("latestpool", "r") as f:
 obj = json.loads(data)
 
 if hashrateSols > obj["hashrateSols"]:
-	result = float(hashrateString.split(' ')[0]) - float(obj["hashrateString")).split(' ')[0])
+	result = float(hashrateString.split(' ')[0]) - float(obj["hashrateString"].split(' ')[0])
 	print(f"\033[1mHashrate: {hashrateString}" + Fore.GREEN + "( +{result} )" + Fore.RESET)
-elif hashrateSols < obj["hashrateSols"]::
-	result = float(hashrateString.split(' ')[0]) - float(obj["hashrateString")).split(' ')[0])
+elif hashrateSols < obj["hashrateSols"]:
+	result = float(hashrateString.split(' ')[0]) - float(obj["hashrateString"].split(' ')[0])
 	print(f"\033[1mHashrate: {hashrateString}" + Fore.RED + "( {result} )" + Fore.RESET)
 else:
 	print(f"\033[1mHashrate: {hashrateString}")
