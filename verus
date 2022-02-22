@@ -37,28 +37,28 @@ else:
 	print(f"\033[1mHashrate: {hashrateString}")
 	
 if immature > obj["immature"]:
-	result = immature - obj["immature")
+	result = immature - obj["immature"]
 	print(f"\033[1mImmature: {immature}" + Fore.GREEN + "( +{result} )" + Fore.RESET)
 elif immature < obj["immature"]:
-	result = immature - obj["immature")
+	result = immature - obj["immature"]
 	print(f"\033[1mImmature: {immature}" + Fore.RED + "( {result} )" + Fore.RESET)
 else:
 	print(f"\033[1mImmature: {immature}")
 	
 if balance > obj["balance"]:
-	result = balance - obj["balance")
+	result = balance - obj["balance"]
 	print(f"\033[1mBalances: {balance}" + Fore.GREEN + "( +{balance} )" + Fore.RESET)
 elif balance < obj["balance"]:
-	result = balance - obj["balance")
+	result = balance - obj["balance"]
 	print(f"\033[1mBalances: {balance}" + Fore.RED + "( {balance} )" + Fore.RESET)
 else:
 	print(f"\033[1mBalances: {balance}")
 	
 if paid > obj["paid"]:
-	result = paid - obj["paid")
+	result = paid - obj["paid"]
 	print(f"\033[1mTotal Paid: {paid}" + Fore.GREEN + "( +{paid} )" + Fore.RESET)
 elif balance < obj["balance"]:
-	result = paid - obj["paid")
+	result = paid - obj["paid"]
 	print(f"\033[1mTotal Paid: {paid}" + Fore.RED + "( {paid} )" + Fore.RESET)
 else:
 	print(f"\033[1mTotal Paid: {paid}")
