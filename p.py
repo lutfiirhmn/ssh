@@ -1,10 +1,10 @@
 import requests, re, time
 
-with open("listemail") as f:
+with open("listemail", "r") as f:
 	data = f.readlines()
 	
-email = data[0].split("@")[0]
-password = data[0].split("@")[1]
+email = data[0].split("@")[0].strip()
+password = data[0].split("@")[1].strip()
 
 while True:
 	check = requests.get(f"https://www.1secmail.com/api/v1/?action=getMessages&login={email}&domain={password}").json()
