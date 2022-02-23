@@ -13,7 +13,7 @@ while True:
 		a = a.text.split(',')[16].split('confirmation_token=')[1].split('&amp;locale=id')[0]
 		requests.get(f"https://run.qwiklabs.com/users/confirmation?confirmation_token={a}")
 		break
-	time.sleep(2)
+	time.sleep(5)
 	
 with open('listemail', 'r') as fin:
     data = fin.read().splitlines(True)
