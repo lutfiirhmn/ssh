@@ -22,15 +22,10 @@ while True:
 		a = a.text.split(',')[16].split('confirmation_token=')[1].split('&amp;locale=id')[0]
 		requests.get(f"https://run.qwiklabs.com/users/confirmation?confirmation_token={a}")
 		print(f"{email}@{password} is confirm!!")
-		
-		with open('listemail', 'r') as fin:
-			data = fin.read().splitlines(True)
-		with open('listemail', 'w') as fout:
-			fout.writelines(data[1:])
-
-		with open("listemail", "r") as f:
-			data = f.readlines()
-			
-		email = data[0].split("@")[0].strip()
-		password = data[0].split("@")[1].strip()
+		break
 	time.sleep(5)
+	
+with open('listemail', 'r') as fin:
+    data = fin.read().splitlines(True)
+with open('listemail', 'w') as fout:
+    fout.writelines(data[1:])
