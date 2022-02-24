@@ -3,6 +3,7 @@ import os, time
 
 project = os.popen("gcloud config get-value project 2> /dev/null").read().replace("\n", "")
 
+os.system(f"gcloud config set project {project}")
 for x in range(300, 0, -1):
     print(str(x) + "     ", end='\r')
     time.sleep(1)
