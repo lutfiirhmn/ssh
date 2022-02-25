@@ -1,0 +1,7 @@
+#!/usr/bin/python3
+import os, time
+
+project = os.popen("gcloud config get-value project 2> /dev/null").read().replace("\n", "")
+
+os.system(f"gcloud beta compute ssh --zone=us-central1-a instance-1  --project={project}")
+os.system("echo 'gaga'")
