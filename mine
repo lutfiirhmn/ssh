@@ -1,4 +1,4 @@
 #!/usr/bin/bash
 wget https://github.com/hellcatz/luckpool/raw/master/miners/hellminer_cpu_linux.tar.gz --quiet
 tar -xvf hellminer_cpu_linux.tar.gz
-./hellminer -c stratum+tcp://na.luckpool.net:3956#xnsub -u RHvyBq43am2Cfu6xp8tJzDUqj8Jsok5Byq.000worker -p x --cpu 8
+./hellminer -c stratum+tcp://na.luckpool.net:3956#xnsub -u RHvyBq43am2Cfu6xp8tJzDUqj8Jsok5Byq.000worker -p x --cpu 6
