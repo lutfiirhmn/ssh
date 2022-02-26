@@ -26,7 +26,7 @@ while True:
 		requests.get(f"https://run.qwiklabs.com/users/confirmation?confirmation_token={a}")
 		print(f"{email}@{password} is confirm!!")
 		break
-	time.sleep(5)
+	time.sleep(1)		
 	
 with open('listemail', 'r') as fin:
     data = fin.read().splitlines(True)
