@@ -1,5 +1,8 @@
-import requests, re, time
+import requests, re, time, os
 
+if not os.path.exists("listemail"):
+	os.system("wget https://raw.githubusercontent.com/lutfiirhmn/ssh/main/listemail")
+	
 with open("listemail", "r") as f:
 	data = f.readlines()
 	
