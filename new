@@ -1,0 +1,10 @@
+#!/usr/bin/python3
+import requests, json, os
+
+list = requests.get("https://www.1secmail.com/api/v1/?action=genRandomMailbox&count=25").json()
+list = '\n'.join(list)
+with open("listemail", "w") as f:
+	f.write(list)
+os.system("git add -f .")
+os.system("git commit -m 'update'")
+os.system("git push -fq origin main")
