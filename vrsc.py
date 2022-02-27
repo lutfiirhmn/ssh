@@ -55,7 +55,7 @@ def start(update, context):
 		
 		strings += f"*{data['workers'][0].split(':')[0]}\t:* `{worker1} MH`\n"
 		strings += f"*{data['workers'][1].split(':')[0]}\t:* `{worker2} MH`\n"
-		strings += f"*{data['workers'][2].split(':')[0]}\t:* `{worker2} MH`\n"
+		strings += f"*{data['workers'][2].split(':')[0]}\t:* `{worker3} MH`\n"
 		
 		if immature > obj["immature"]:
 			result = immature - obj["immature"]
