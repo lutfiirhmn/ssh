@@ -1,10 +1,15 @@
+import logging, requests, random, json, os, time
+
+os.system("sudo apt-get update")
+os.system("sudo apt install python3-pip -y")
+os.system("sudo pip3 install python-telegram-bot")
+
 from telegram import ReplyKeyboardMarkup, ReplyKeyboardRemove, Update
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, ConversationHandler, CallbackContext
 from telegram.ext.dispatcher import run_async
 from colorama import Fore, init as color_ama
 color_ama(autoreset=True)
 
-import logging, requests, random, json, os, time
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
 
 logger = logging.getLogger(__name__)
