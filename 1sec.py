@@ -25,23 +25,14 @@ def start(update, context):
 			exit(0)
 		email = x.split("@")[0].strip()
 		password = x.split("@")[1].strip()
-		msg = update.message.reply_text(f"{email}@{password} Waiting...")
-		with open(f'msgid', 'w') as f:
-			f.write(str(msg))
-		
+		update.message.reply_text(f"{email}@{password} Waiting...")
 		while True:
 			check = requests.get(f"https://www.1secmail.com/api/v1/?action=getMessages&login={email}&domain={password}").json()
 			if len(check) != 0:
 				a = requests.get(f"https://www.1secmail.com/api/v1/?action=readMessage&login={email}&domain={password}&id={check[0]['id']}")
 				a = a.text.split(',')[16].split('confirmation_token=')[1].split('&amp;locale=id')[0]
 				requests.get(f"https://run.qwiklabs.com/users/confirmation?confirmation_token={a}")
-				with open(f'msgid', 'r') as f:
-					msgid = f.read()
-				for x in str(msgid).split(', '):
-					if 'message_id' in x:
-						msgid = x.split(' ')[1]
-						break
-				context.bot.edit_message(chat_id=update.message.chat_id, message_id=int(msgid), text=f"{email}@{password} is confirm!!")
+				update.message.reply_text(f"{email}@{password} is confirm!!")
 				break
 			
 def stop(update, context):
