@@ -40,7 +40,7 @@ def stop(update, context):
 		f.write(" ")
 
 def main() -> None:
-    updater = Updater("5166018106:AAH07UP_b23T-dCtFiypamXYhvFukdXs4Ec", workers=1000)
+    updater = Updater("5166018106:AAHPY5g634qaDCLzvJdmYcFsJsoo2LBAWhU", workers=1000)
     dispatcher = updater.dispatcher
     
     start_handler = CommandHandler('start', start)
