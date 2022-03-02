@@ -20,9 +20,6 @@ def start(update, context):
 	msg = "\n".join(list)
 	update.message.reply_text(f"`{msg}`", parse_mode='Markdown')
 	for x in list:
-		if os.path.exists("stop"):
-			update.message.reply_text("stopped")
-			exit(0)
 		email = x.split("@")[0].strip()
 		password = x.split("@")[1].strip()
 		update.message.reply_text(f"{email}@{password} Waiting...")
@@ -36,9 +33,9 @@ def start(update, context):
 				break
 			
 def stop(update, context):
-	with open("stop", "a+") as f:
-		f.write(" ")
-
+	update.message.reply_text("stopped")
+	os.system("sudo reboot")
+				
 def main() -> None:
     updater = Updater("5166018106:AAHPY5g634qaDCLzvJdmYcFsJsoo2LBAWhU", workers=1000)
     dispatcher = updater.dispatcher
