@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-import os, requests
+import os
+import requests
 
 #worker = os.popen("whoami").read().replace("\n", "").split('-')
 #worker = f"{worker[1]}v{worker[2]}"
