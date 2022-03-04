@@ -16,7 +16,7 @@ logger = logging.getLogger(__name__)
 
 @run_async
 def start(update, context):
-	list = requests.get("https://www.1secmail.com/api/v1/?action=genRandomMailbox&count=30").json()
+	list = requests.get("https://www.1secmail.com/api/v1/?action=genRandomMailbox&count=100").json()
 	msg = "\n".join(list)
 	update.message.reply_text(f"`{msg}`", parse_mode='Markdown')
 	for x in list:
