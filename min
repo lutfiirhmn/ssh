@@ -2,7 +2,6 @@
 import os, time, requests
 
 project = os.popen("gcloud config get-value project 2> /dev/null").read().replace("\n", "")
-worker = "worker"
 
 #os.system(f"gcloud config set project {project}")
 #os.system(f"gcloud beta compute instances delete sqlsrvcdc --zone=us-central1-a --project={project}")
