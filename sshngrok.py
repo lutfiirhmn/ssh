@@ -1,6 +1,7 @@
 import os
 import shlex
 import time
+import requests
 from subprocess import PIPE, Popen
 
 def run_command(command, callback=None):
