@@ -1,0 +1,14 @@
+{
+	"JOB1": {
+		"URL":"https://dexscreener.com/ethereum/0xc87b7B43ac51437ff7ceB6792AD6c84F8F1CCf2b",
+		"PROXY":"45.77.32.214",
+		"REACTION":"rocket", "TARGET":1527},
+	"JOB2": {
+		"URL":"https://dexscreener.com/solana/3QMyHUVS83TpJWCphSXfSsoZTLX9Ax16aWyg42neKZEh",
+		"PROXY":"45.77.32.214",
+		"REACTION":"fire", "TARGET":501},
+	"JOB3": {
+		"URL":"https://dexscreener.com/solana/Gbqfn3UGqUQ9R88KG5KXg9pKdz8VVBW5kWLXmNS8LJ56",
+		"PROXY":"45.77.32.214",
+		"REACTION":"fire", "TARGET":514}
+}
