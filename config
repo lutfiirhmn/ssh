@@ -4,11 +4,11 @@
 		"PROXY":"45.77.32.214",
 		"REACTION":"flag", "TARGET":516},
 	"JOB2": {
-		"URL":"https://dexscreener.com/ethereum/0xc87b7B43ac51437ff7ceB6792AD6c84F8F1CCf2b",
-		"PROXY":"207.148.74.6",
-		"REACTION":"rocket", "TARGET":1527},
+		"URL":"https://dexscreener.com/solana/8AYpR27W1Y8WrW7yVyxB8AaM8qCTuCwMcB3HFmsFpump",
+		"PROXY":"45.77.32.214",
+		"REACTION":"flag", "TARGET":516},
 	"JOB3": {
-		"URL":"https://dexscreener.com/solana/Gbqfn3UGqUQ9R88KG5KXg9pKdz8VVBW5kWLXmNS8LJ56",
+		"URL":"https://dexscreener.com/solana/So11111111111111111111111111111111111111112",
 		"PROXY":"45.77.32.214",
 		"REACTION":"fire", "TARGET":514}
 }
