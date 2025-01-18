@@ -2,11 +2,11 @@
 	"JOB1": {
 		"URL":"https://dexscreener.com/solana/cc71bdufsanxgxralhxrizaayebrk8u6ngghnhegvbop",
 		"PROXY":"45.77.32.214",
-		"REACTION":"rocket", "TARGET":762},
+		"REACTION":"rocket", "TARGET":1012},
 	"JOB2": {
 		"URL":"https://dexscreener.com/solana/cc71bdufsanxgxralhxrizaayebrk8u6ngghnhegvbop",
-		"PROXY":"45.32.119.224",
-		"REACTION":"fire", "TARGET":660},
+		"PROXY":"45.77.32.214",
+		"REACTION":"fire", "TARGET":1010},
 	"JOB3": {
 		"URL":"https://dexscreener.com/solana/So11111111111111111111111111111111111111112",
 		"PROXY":"45.77.32.214",
