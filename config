@@ -6,5 +6,5 @@
 	"JOB2": {
 		"URL":"https://dexscreener.com/base/0xec4bed9b1f527eddcf297766b54f257a492aa877",
 		"PROXY":"45.77.32.214",
-		"REACTION":"fire", "TARGET":150}
+		"REACTION":"fire", "TARGET":1500}
 }
