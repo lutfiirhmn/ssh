@@ -1,10 +1,10 @@
 {
 	"JOB1": {
-		"URL":"https://dexscreener.com/solana/DCEbvkfGnQVwMxEpXDRAvV8UTNpNyusEXpBYMzdU5ejf",
+		"URL":"https://dexscreener.com/base/0x043298c5576b181a66d608df7e70c9cb60440479",
 		"PROXY":"45.77.32.214",
-		"REACTION":"rocket", "TARGET":1000},
+		"REACTION":"rocket", "TARGET":151},
 	"JOB2": {
-		"URL":"https://dexscreener.com/solana/2RrD33ttXGTVDSHMwdBeE98isu8G48PAygENktW1eENi",
+		"URL":"https://dexscreener.com/base/0x043298c5576b181a66d608df7e70c9cb60440479",
 		"PROXY":"45.77.32.214",
-		"REACTION":"fire", "TARGET":278}
+		"REACTION":"fire", "TARGET":100}
 }
