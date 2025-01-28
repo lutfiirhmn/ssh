@@ -1,22 +1,10 @@
 {
 	"JOB1": {
 		"URL":"https://dexscreener.com/solana/144dMzUjmgqcxKTcJitMDizVqTigH5hdBHdF9BUX1Ngr",
-		"PROXY":"45.77.32.214",
-		"REACTION":"poop", "TARGET":502},
+		"PROXY":"149.28.142.225",
+		"REACTION":"poop", "TARGET":1006},
 	"JOB2": {
 		"URL":"https://dexscreener.com/solana/9bqmvouomr6w59neqvoudevgzgefr2yvvyuz3wvwe68c",
 		"PROXY":"149.28.157.170",
-		"REACTION":"rocket", "TARGET":1044},
-	"JOB3": {
-		"URL":"https://dexscreener.com/solana/9bqmvouomr6w59neqvoudevgzgefr2yvvyuz3wvwe68c",
-		"PROXY":"149.28.157.170",
-		"REACTION":"fire", "TARGET":1004},
-	"JOB4": {
-		"URL":"https://dexscreener.com/solana/9bqmvouomr6w59neqvoudevgzgefr2yvvyuz3wvwe68c",
-		"PROXY":"45.77.32.214",
-		"REACTION":"rocket", "TARGET":1034},
-	"JOB5": {
-		"URL":"https://dexscreener.com/solana/9bqmvouomr6w59neqvoudevgzgefr2yvvyuz3wvwe68c",
-		"PROXY":"45.77.32.214",
-		"REACTION":"fire", "TARGET":994}
+		"REACTION":"rocket", "TARGET":1044}
 }
