@@ -1,10 +1,10 @@
 {
 	"JOB1": {
 		"URL":"https://dexscreener.com/solana/144dMzUjmgqcxKTcJitMDizVqTigH5hdBHdF9BUX1Ngr",
-		"PROXY":"149.28.142.225",
+		"PROXY":"45.76.190.213",
 		"REACTION":"poop", "TARGET":1006},
 	"JOB2": {
 		"URL":"https://dexscreener.com/solana/9bqmvouomr6w59neqvoudevgzgefr2yvvyuz3wvwe68c",
-		"PROXY":"149.28.157.170",
+		"PROXY":"45.76.190.213",
 		"REACTION":"rocket", "TARGET":1044}
 }
