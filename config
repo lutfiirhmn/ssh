@@ -6,5 +6,10 @@
 	"JOB2": {
 		"URL":"https://dexscreener.com/solana/9bqmvouomr6w59neqvoudevgzgefr2yvvyuz3wvwe68c",
 		"PROXY":"45.76.190.213",
-		"REACTION":"rocket", "TARGET":1044}
+		"REACTION":"rocket", "TARGET":1044},
+		
+	"JOB3": {
+		"URL":"https://top100token.com/address/0x46426bE2ff788935D560371FcdA2AF4762ebFf44",
+		"PROXY":"45.76.190.213",
+		"REACTION":"rocket", "TARGET":1}
 }
