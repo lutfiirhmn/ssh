@@ -2,7 +2,7 @@
 	"JOB1": {
 		"URL":"https://dexscreener.com/xrpl/444f474500000000000000000000000000000000.rp4gxygxpm2ydnlgidehrrkfuaaufszaca_xrp",
 		"PROXY":"45.76.190.213",
-		"REACTION":"rocket", "TARGET":2885},
+		"REACTION":"rocket", "TARGET":3895},
 	"JOB2": {
 		"URL":"https://dexscreener.com/sui/0xf97d2a9200549889a231c154035c102a0ef52bdc2d31f62ed750a2001be52f3d",
 		"PROXY":"45.76.190.213",
